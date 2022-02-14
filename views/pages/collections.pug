@@ -1,40 +1,7 @@
 extends ../_includes/layout
 
 block variables
-  - var template = 'collections'
+    - var template = 'collections'
 
 block content
-  .collections(data-background="#c97164" data-color="#f9f1e7")
-    .collections__wrapper
-      .collections__titles
-        each collection, index in collections
-          .collections__titles__label!=`${home.data.collection}<br>${Numbers(index)}`
-          .collections__titles__title=collection.data.title
-
-        each collection, index in collections
-          .collections__titles__label!=`${home.data.collection}<br>${Numbers(index)}`
-          .collections__titles__title=collection.data.title
-
-        each collection, index in collections
-          .collections__titles__label!=`${home.data.collection}<br>${Numbers(index)}`
-          .collections__titles__title=collection.data.title
-
-      .collections__gallery
-        .collections__gallery__wrapper
-          each collection, index in collections
-            each product in collection.data.products
-              a.collections__gallery__link(href=Link(product.products_product))
-                figure.collections__gallery__media(data-index=index)
-                  img.collections__gallery__media__image(data-src=product.products_product.data.image.url alt=product.products_product.data.image.alt)
-
-      .collections__content
-        each collection, index in collections
-          article.collections__article(class=`${index === 0 ? 'collections__article--active' : ''}`)
-            h1.collections__article__title=`${collection.data.title} ${home.data.collection}`
-            p.collections__article__description=collection.data.description
-
-      .collections__mobile
-        each collection, index in collections
-          .collections__mobile__item
-            .collections__mobile__item__label!=`${home.data.collection}<br>${Numbers(index)}`
-            .collections__mobile__item__title=collection.data.title
+  h1.collections__title Collections 
