@@ -1,10 +1,4 @@
-# webpack-boilerplate
-A boilerplate which inspired from luis henrique bizzaro course on awwwards but intent to use latest and v5 techniques of Webpack
+# Floema-starter
+repo made for people who are struggling to migrate from prismic v5 to v6 or suffering from weird errors.
 
-
-It has commits according to the lecture of the course 
-
-
-```
-Please do not share env to anyone 
-```
+now you can continue with the journey 😀
